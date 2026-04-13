@@ -1,6 +1,6 @@
 import socket
 
-ipEsp32 = "192.168.0.6"
+ipEsp32 = "******"
 puerto = 3306
 
 try:

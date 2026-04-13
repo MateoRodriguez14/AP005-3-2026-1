@@ -1,7 +1,7 @@
 #include <WiFi.h>
 
-const char* ssid = "MIREYA ";
-const char* password = "52081344";
+const char* ssid = "****** ";
+const char* password = "*****";
 const int ledPin = 2;
 char modo = '0';
 unsigned long t0 = 0; //Almacena enteros no negativos de 0 a 4 mil millones
