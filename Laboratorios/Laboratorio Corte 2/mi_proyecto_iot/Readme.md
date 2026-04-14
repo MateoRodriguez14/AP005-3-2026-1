@@ -35,7 +35,7 @@ cd Laboratorios\Laboratorio Corte 2\mi_proyecto_iot
 - Cargar el programa lecturaPotenciometro.ino en el ESP32
 - Ejecute el archivo serial_a_csv.py
 - Ejecute el archivo app.py
-- En su navegador de preferencia dirijase al enlace: http://127.0.0.1:5000/
+- En su navegador de preferencia dirijace al enlace: http://127.0.0.1:5000/
 ##  Estructura del proyecto
 
 ```
