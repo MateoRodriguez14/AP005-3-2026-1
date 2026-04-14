@@ -1,91 +1,60 @@
 
-#  ESP32 WiFi Monitor
-
-Proyecto para monitorear datos enviados desde un ESP32 a través de WiFi y visualizarlos en Python.
+#  Lectura de Potenciometro con ESP 32
 
 ## Descripción
 
-Este proyecto permite capturar datos enviados por un ESP32 y mostrarlos en una interfaz gráfica desarrollada con Tkinter.
+Actividad didactica cuyo objetivo práctico reside en tomar lecturas continuas de los valores generados por un potenciometro (voltaje, porcentaje reistencia potenciómetro) mediante el ESP 32 para posteriormente evaluar estos datos y mostrarlos con Python y HTML respectivamente.
 
 ## Características
 
--  Recepción de datos por WiFi
+-  Recepción de datos analogicos de forma serial
 -  Visualización en tiempo real
 -  Interfaz gráfica sencilla
--  Compatible con ESP32
 
 ## Tecnologías
 
 - Python 3
-- Tkinter
+- Flask
 - ESP32 (Arduino IDE)
-- WiFi
+- HTML y CSS
 
 ## Instalación
 
 1. Clonar el repositorio:
 ```bash
-git clone https://github.com/tu-usuario/esp32-wifi-monitor.git
+git clone https://github.com/MateoRodriguez14/AP005-3-2026-1.git
 ````
 
 2. Entrar al directorio:
 
 ```bash
-cd esp32-wifi-monitor
+cd Laboratorios\Laboratorio Corte 2\mi_proyecto_iot
 ```
 
-3. Instalar dependencias:
-
-```bash
-pip install -r requirements.txt
-```
-
-##  Uso
-
-Ejecuta el programa principal:
-
-```bash
-python main.py
-```
-
-Asegúrate de que el ESP32 esté conectado a la misma red WiFi.
-
+## Instrucciones de uso.
+- Cargar el programa lecturaPotenciometro.ino en el ESP32
+- Ejecute el archivo serial_a_csv.py
+- Ejecute el archivo app.py
+- En su navegador de preferencia dirijase al enlace: http://127.0.0.1:5000/
 ##  Estructura del proyecto
 
 ```
-esp32-wifi-monitor/
-│── main.py
-│── wifi_receiver.py
-│── gui/
-│   └── interfaz.py
-│── requirements.txt
-│── README.md
+mi_proyecto_iot/
+|-- lecturaPotenciometro.ino
+|-- app.py
+|-- serial_a_csv.py
+|-- datos_potenciometro.csv
+|-- requirements.txt
+|
+|-- templates/
+| ‘-- index.html
+|
+‘-- static/
+‘-- grafica_potenciometro.png
 ```
 
-##  Configuración
+## Resultados
+<img width="1920" height="974" alt="Captura de pantalla (743)" src="https://github.com/user-attachments/assets/3ab42be1-3dfc-4c25-87fc-d182fdec7d91" />
 
-Modifica la IP del servidor en el archivo `wifi_receiver.py`:
+<img width="1920" height="917" alt="Captura de pantalla (744)" src="https://github.com/user-attachments/assets/d3b36c80-5cc3-44eb-8017-ea3f9e9e46e6" />
 
-```python
-HOST = "192.168.1.100"
-PORT = 5000
-```
-
-##  Contribuciones
-
-1. Haz un fork del proyecto
-2. Crea una rama (`git checkout -b feature/nueva-funcionalidad`)
-3. Haz commit (`git commit -m "Agrega nueva funcionalidad"`)
-4. Haz push (`git push origin feature/nueva-funcionalidad`)
-5. Abre un Pull Request
-
-##  Licencia
-
-Este proyecto está bajo la licencia MIT.
-
-##  Autor
-
-Tu Nombre - [@tu-usuario](https://github.com/tu-usuario)
-
-```
-```
