@@ -9,21 +9,21 @@ void loop() {
 
   int i = 0;
 
-  while (i < 50) {
+  while (i < 100) {
     digitalWrite(servoPin, HIGH);
     delayMicroseconds(1000);
     digitalWrite(servoPin, LOW);
-    delayMicroseconds(12000);
+    delayMicroseconds(20000);
     i++;
   }
 
   i = 0;
 
-  while (i < 50) {
+  while (i < 100) {
     digitalWrite(servoPin, HIGH);
     delayMicroseconds(2000);
     digitalWrite(servoPin, LOW);
-    delayMicroseconds(12000);
+    delayMicroseconds(20000);
     i++;
   }
 
